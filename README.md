@@ -18,6 +18,8 @@ This project explores what drives a movie's success — critical acclaim vs. com
 - Standardized numeric fields (Gross, Runtime, Votes)
 - Prepared a clean dataset for both SQL and Power BI use
 
+📁 Script: [`imdb.py`](./imdb.py) | Data: [`imdb_top_1000.csv`](./imdb_top_1000.csv)
+
 ---
 
 ## 🗄️ 2. SQL Analysis
@@ -31,9 +33,9 @@ Key questions answered using SQL:
 | 3 | Which actors appear most frequently across the Top 1000? | `UNION ALL` across Star1–Star4 |
 | 4 | Which movies are "hidden gems" — high rating, low vote count? | `WHERE`, subquery |
 
-📁 Full queries: [`/sql`](./sql)
-
 **Key finding:** Several 8.6+ rated films (e.g. *Soorarai Pottru*, *Seppuku*) have well below-average vote counts — genuinely underrated films outside the mainstream.
+
+📁 Queries: [`SQL_CODE.sql`](./SQL_CODE.sql)
 
 ---
 
@@ -48,23 +50,8 @@ An interactive dashboard summarizing the dataset:
 
 **Key finding:** Critical acclaim doesn't guarantee box office success — several 9+ rated classics have far lower gross than mid-rated (7.6–8.4) blockbusters. UA-certified films earn the highest average gross, likely due to their broader audience reach.
 
----
-
-## 📁 Repository Structure
-
-```
-├── data/
-│   └── imdb_top1000_cleaned.csv
-├── notebooks/
-│   └── data_cleaning.ipynb
-├── sql/
-│   └── queries.sql
-├── powerbi/
-│   └── imdb_dashboard.pbix
-├── screenshots/
-│   └── dashboard_preview.png
-└── README.md
-```
+📁 Dashboard file: [`PROJECT_IMDB.pbix`](./PROJECT_IMDB.pbix)
+📸 Preview: ![Dashboard preview](./IMDb.png)
 
 ---
 
@@ -83,4 +70,4 @@ An interactive dashboard summarizing the dataset:
 
 ---
 
-**Author:** Pratham · Data Analytics Enthusiast
+**Author:** Pratham
